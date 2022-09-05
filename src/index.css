@@ -1,0 +1,205 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+}
+
+Header {
+  padding: 0rem;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5%;
+  color: #fff;
+  font-size: 20px;
+}
+
+Header h4 {
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Caveat', cursive;
+}
+
+ul {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style: none;
+  margin-left: 10%;
+  font-family: 'Caveat', cursive;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+ul li {
+  margin-left: 70%;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: rgb(189, 0, 189);
+  transition: 1s ease-in-out;
+}
+
+
+main {
+  background-image: url('bg.jpg');
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 0.5rem 5rem rgb(62, 62, 62);
+}
+
+h1 {
+  color: #fff;
+  margin-top: 5%;
+  margin-left: 10%;
+  font-size: 70px;
+}
+
+h2 {
+  color: #fff;
+  margin-left: 10%;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  letter-spacing: 2%;
+}
+
+.main-link{
+  margin-left: 10%;
+  text-decoration: none;
+  color: #fff;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background: rgb(44, 0, 44);
+  border-radius: 5%;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.main-link:hover {
+  background: linear-gradient(rgb(44, 0, 44), blue);
+}
+
+.h1-about {
+  text-align: center;
+  margin-left: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-gap: 1em;
+  padding: 2em;
+}
+
+.wrapper div {
+  background: #fff;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  box-shadow: 0 0.5rem 1rem rgb(192, 182, 182);
+}
+
+.wrapper div .h2-about {
+  color: #000;
+  margin-left: 0;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footer {
+  box-shadow: 0 0.5rem 1rem #fff;
+  background: #fff;
+  padding: 0.5px;
+}
+
+.footer p {
+  font-size: 30px;
+}
+
+@media (max-width: 900px) {
+  Header h4 {
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  ul {
+    margin-left: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  ul li {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: auto;
+    margin-right: 10%;
+  }
+
+
+  h1 {
+    margin-top: 40%;
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .main-link{
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper div {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer {
+    padding: 3px;
+  }
+
+  .footer p {
+    font-size: 20px;
+  }
+}
